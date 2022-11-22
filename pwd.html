@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password generator by Carmen López</title>
+    <meta name="description" content="Strong password generator tool" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h3>.password generator.</h3>
+        <h3>.carmen lópez.</h3>
+    </header>
+    <main>
+        <div class="card">
+            <input class="f-ipt" type="text" id="pwd" placeholder="your password" readonly />
+            <button id="copy">COPY</button>
+        </div>
+        <div>
+            <h3>Caracter Length</h3>
+            <input class="f-ipt" type="number" id="pwd-length" inputmode="numeric" value="10" min="10" max="35">
+            <span class="crs">
+                <input type="checkbox" id="upper"> UPPER CASE </input>
+                <input type="checkbox" id="lower"> LOWER CASE </input>
+                <input type="checkbox" checked="true" disabled> NUMBERS </input>
+                <input type="checkbox" id="symbols"> SYMBOLS </input>
+            </span>
+            <button id="generate">GENERATE</button>
+    </main>
+    <footer>
+        <h3><a target="_blank" href="https://github.com/cgbl-90/pwd-generator">Open source code</a> by Carmen López</h3>
+    </footer>
+    <script src="logic.js"></script>
+</body>
+
+</html>
